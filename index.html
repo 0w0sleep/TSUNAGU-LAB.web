@@ -2,55 +2,37 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TSUNAGU-LAB | AIセミナー開催情報</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TSUNAGU-LAB | HOME</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swiper/10.3.1/swiper-bundle.min.css">
 </head>
 <body>
-
 <header>
-    <h1>TSUNAGU-LAB</h1>
-    <nav>
-        <ul>
-            <li><a href="#upcoming">開催予定のセミナー</a></li>
-            <li><a href="#past">過去の実績</a></li>
-        </ul>
-    </nav>
+    <h1><a href="index.html">TSUNAGU-LAB</a></h1>
+    <nav onclick="toggleMenu()">☰ メニュー</nav>
 </header>
-
+<div id="menu">
+    <input type="text" placeholder="サイト内検索">
+    <ul>
+        <li><a href="events.html">セミナー情報</a></li>
+    </ul>
+</div>
 <main>
-
-<section id="upcoming">
-    <h2>開催予定のAIセミナー</h2>
-    <ul>
-        <li>
-            <h3>【オンライン】AI入門セミナー</h3>
-            <p><strong>日時：</strong>2025年4月15日（土） 13:00～15:00</p>
-            <p><strong>場所：</strong>オンライン開催（Zoom）</p>
-            <a href="#">詳細・申込みはこちら</a>
-        </li>
-        <!-- 他の開催予定セミナーを追加 -->
-    </ul>
-</section>
-
-<section id="past">
-    <h2>過去に開催したセミナー</h2>
-    <ul>
-        <li>
-            <h3>AI活用ビジネスセミナー</h3>
-            <p><strong>開催日：</strong>2025年3月20日</p>
-            <p><strong>参加者数：</strong>45名</p>
-            <a href="#">詳細を見る</a>
-        </li>
-        <!-- 他の過去セミナーを追加 -->
-    </ul>
-</section>
-
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">イベント①</div>
+            <div class="swiper-slide">イベント②</div>
+            <div class="swiper-slide">イベント③</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 </main>
-
 <footer>
-    <p>©2025 TSUNAGU-LAB All rights reserved.</p>
+    <p>©2025 TSUNAGU-LAB</p>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swiper/10.3.1/swiper-bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
